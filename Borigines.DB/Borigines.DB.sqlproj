@@ -63,6 +63,13 @@
   <ItemGroup>
     <Build Include="Tables\Users.sql" />
     <Build Include="Tables\Albums.sql" />
+    <Build Include="Tables\Pictures.sql" />
+    <Build Include="Tables\Categories.sql" />
+    <Build Include="Tables\Languages.sql" />
+    <Build Include="Tables\Contents.sql" />
+    <Build Include="Tables\Publications.sql" />
+    <Build Include="Tables\PublicationPictures.sql" />
+    <Build Include="Tables\AlbumsPictures.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Borigines.DB.refactorlog" />
