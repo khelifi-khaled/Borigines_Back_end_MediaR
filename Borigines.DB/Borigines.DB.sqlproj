@@ -74,6 +74,7 @@
     <Build Include="StoredProcedures\Login.sql" />
     <Build Include="StoredProcedures\RegisterUser.sql" />
     <Build Include="Functions\GetSalt.sql" />
+    <Build Include="StoredProcedures\UpdateUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Borigines.DB.refactorlog" />
