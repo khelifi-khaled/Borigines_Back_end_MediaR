@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Publications]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1,1),
 	[Date] DATETIME NOT NULL,
 	[FK_IdUser] INT NOT NULL,
 	[FK_IdCategory] INT NOT NULL,

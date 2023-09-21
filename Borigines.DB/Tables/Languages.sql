@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Languages]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1,1),
 	[Code] NCHAR(2) NOT NULL
 )
