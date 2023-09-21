@@ -72,6 +72,8 @@
     <Build Include="Tables\AlbumsPictures.sql" />
     <Build Include="Functions\GetSecretKey.sql" />
     <Build Include="StoredProcedures\Login.sql" />
+    <Build Include="StoredProcedures\RegisterUser.sql" />
+    <Build Include="Functions\GetSalt.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Borigines.DB.refactorlog" />
