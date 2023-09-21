@@ -8,10 +8,10 @@ AS
 
 BEGIN 
 	DECLARE @salt NVARCHAR(100)
-	SET @salt = (dbo.GetSalt())
+	SET @salt = CONCAT(NEWID(),NEWID(),NEWID())
 
 	DECLARE @key NVARCHAR(64)
-	SET @key = (dbo.GetSecretKey)
+	SET @key = dbo.GetSecretKey()
 
 	DECLARE @pwd_hash VARBINARY(64)
 	SET @pwd_hash = HASHBYTES('SHA2_512', CONCAT(@salt,@key,@pwd,@salt))
