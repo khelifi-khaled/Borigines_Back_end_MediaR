@@ -1,7 +1,7 @@
 ﻿CREATE PROCEDURE [dbo].[UpdateUserStatus]
-	@id INT,
+	@id UNIQUEIDENTIFIER,
 	@status BIT
 AS
 BEGIN 
-	update Users SET IsActive = @status WHERE Id = @Id ; 
+	update Users SET IsActive = @status WHERE Id = @id ; 
 END

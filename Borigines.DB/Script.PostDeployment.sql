@@ -14,5 +14,3 @@ Modèle de script de post-déploiement
 
 
 EXEC RegisterUser 'Filip' , 'Depuydt' , 'Filip.Depuydt@test.com', 'test1234'
-
-UPDATE Users SET IsAdmin = 1 where  Id = 1 ;

@@ -3,7 +3,7 @@
 	@lastName NVARCHAR(50),
 	@login NVARCHAR(250),
 	@pwd NVARCHAR(100),
-	@id INT
+	@id UNIQUEIDENTIFIER
 AS
 BEGIN 
 	DECLARE @salt NVARCHAR(100)

@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[Contents]
 (
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
 	[Title] NVARCHAR(100) NOT NULL,
 	[Description] TEXT NOT NULL,
-	[LanguageId] INT NOT NULL, 
+	[LanguageId] UNIQUEIDENTIFIER NOT NULL, 
     CONSTRAINT [FK_Contents_ToLanguage] FOREIGN KEY ([LanguageId]) REFERENCES [Languages]([Id])
 )
